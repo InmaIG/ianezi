@@ -1,10 +1,11 @@
+
 # ianezi
 
-Custom Python scripts used in the paper **“Label‑free morphological profiling of chemotherapy response in 3D breast cancer spheroids”**.
+Custom Python scripts used in the paper **“Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids”**.  
 The pipeline implements brightfield HCI preprocessing, segmentation, feature extraction (morphology, texture, and radiomics), dimensionality reduction, clustering, and basic statistics for TNBC spheroids.
 
 > **Python**: 3.10  
-> **Key libs**: OpenCV, NumPy, scikit‑image, Mahotas, PyRadiomics, SimpleITK, scikit‑learn, UMAP, matplotlib, seaborn.
+> **Key libs**: OpenCV, NumPy, scikit-image, Mahotas, PyRadiomics, SimpleITK, scikit-learn, UMAP, matplotlib, seaborn.
 
 ---
 
@@ -73,15 +74,15 @@ Raw images are **not** included in this repository. The scripts expect a directo
 ## Pipeline (run in order)
 
 1) **Feature extraction** — `src/1_feature_extraction.py`  
-   - Builds **maximum intensity projections** from 16‑bit Z‑stacks.
-   - Converts projections to **8‑bit** with percentile clipping.
+   - Builds **maximum intensity projections** from 16-bit Z-stacks.
+   - Converts projections to **8-bit** with percentile clipping.
    - Segments spheroids (Gaussian → Otsu → morphology) and draws contours.
    - Selects largest object per well and extracts:
      - geometric (area, perimeter, circularity, solidity, extent, axes, Hu moments),
      - texture (GLCM, LBP, Haralick),
      - **radiomics** (PyRadiomics on SimpleITK image+mask).
    - Saves `spheroid_features.xlsx` per experiment folder.
-   - **Configure**: `root_dir` and per‑folder output paths inside the script.
+   - **Configure**: `root_dir` and per-folder output paths inside the script.
 
 2) **Collect Excel files** — `src/2_copy_excels.py`  
    - Copies all `spheroid_features.xlsx` into a single folder named `EXCELS esferas_completo`.
@@ -93,7 +94,7 @@ Raw images are **not** included in this repository. The scripts expect a directo
    - Writes `*_trat.xlsx` into `Excels etiquetados`.
 
 4) **UMAP per replicate** — `src/4_superclustering_individuals.py`  
-   - Per file: outlier filtering **within treatment** (median ± 3·SD), z‑score standardization, UMAP (n_neighbors=15, min_dist=0.1), and (optional) hierarchical clustering.
+   - Per file: outlier filtering **within treatment** (median ± 3·SD), z-score standardization, UMAP (n_neighbors=15, min_dist=0.1), and (optional) hierarchical clustering.
    - Saves UMAP scatter plots to `RESULTADOS_GRAFICAS` with fixed treatment colors.
 
 5) **UMAP combined (per cell line)** — `src/5_superclustering_combined.py`  
@@ -107,37 +108,42 @@ Raw images are **not** included in this repository. The scripts expect a directo
    - Histograms per feature comparing R1/R2/R3 for each line.
 
 8) **Welch t-tests + Bonferroni** — `src/8_welch_bonferroni.py`  
-   - Consumes aggregated CSVs (`*_variation_summary.csv`) and performs **Welch** t‑tests vs **DMSO** with Bonferroni correction.
+   - Consumes aggregated CSVs (`*_variation_summary.csv`) and performs **Welch** t-tests vs **DMSO** with Bonferroni correction.
    - Overlays significance stars (ns, *, **, ***, ****) on barplots.
 
 ---
 
 ## Notes & tips
 
-- **Reproducibility**: versions pinned where reported in the paper. Radiomics can be sensitive to pre‑processing; keep SimpleITK datatypes consistent.
-- **Performance**: MIP and feature extraction can be I/O‑bound; running on SSD and using fewer concurrent jobs reduces disk contention.
+- **Reproducibility**: versions pinned where reported in the paper. Radiomics can be sensitive to pre-processing; keep SimpleITK datatypes consistent.
+- **Performance**: MIP and feature extraction can be I/O-bound; running on SSD and using fewer concurrent jobs reduces disk contention.
 - **Quality control**: check contour overlays exported in `Images/4. Spheroids` for segmentation accuracy before downstream analysis.
 
 ---
 
 ## Citation
 
-Please cite the paper and the software archive (Zenodo) once available.
+If you use this software, please cite both the paper and the archived code release:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335305.svg)](https://doi.org/10.5281/zenodo.17335305)
 
 ```
 @software{ianezi_zenodo_2025,
   title        = {ianezi: Morphometric profiling pipeline for 3D TNBC spheroids},
-  author       = {Iáñez García, Inmaculada and collaborators},
+  author       = {Iáñez García, Inmaculada},
   year         = {2025},
   publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.xxxxxxx},   # update after Zenodo release
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.17335305},
   url          = {https://github.com/InmaIG/ianezi}
 }
 ```
+
+Archived at Zenodo: https://doi.org/10.5281/zenodo.17335305  
+Latest version: https://doi.org/10.5281/zenodo.17325450  
 
 ---
 
 ## License
 
-Unless you prefer otherwise, we recommend **MIT** (simple, permissive). Add a `LICENSE` file with the MIT text.
+This repository is distributed under the terms of the **MIT License**. See the file `LICENSE` for details.
