@@ -1,0 +1,23 @@
+# Core scientific stack
+numpy==1.24.2
+pandas==1.5.3
+scipy>=1.10.0
+
+# Imaging & features
+opencv-python>=4.7.0
+scikit-image==0.20.0
+mahotas==1.4.13
+SimpleITK>=2.2.0
+pyradiomics==3.0.1
+
+# ML & DR
+scikit-learn==1.2.2
+umap-learn==0.5.3
+
+# Plotting
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# IO & utils
+openpyxl>=3.1.0
+tqdm>=4.65.0

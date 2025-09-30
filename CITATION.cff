@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "ianezi: Morphometric profiling pipeline for 3D TNBC spheroids"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Iáñez García"
+    given-names: "Inmaculada"
+repository-code: "https://github.com/InmaIG/ianezi"
+version: "v1.0.0"
+date-released: "2025-01-01"
+doi: "10.5281/zenodo.xxxxxxx"   # replace after Zenodo release
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Iáñez García"
+      given-names: "Inmaculada"
+  title: "Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids"
+  year: 2025
+  doi: "10.XXXX/your-paper-doi"  # replace with the journal DOI when available
