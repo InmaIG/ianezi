@@ -1,5 +1,5 @@
 
-# ianezi
+# m3DinAI
 
 Custom Python scripts used in the paper **“Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids”**.  
 The pipeline implements brightfield HCI preprocessing, segmentation, feature extraction (morphology, texture, and radiomics), dimensionality reduction, clustering, and basic statistics for TNBC spheroids.
