@@ -7,7 +7,7 @@ authors:
 version: "v1.0.1"
 doi: "10.5281/zenodo.17335305"
 date-released: "2025-09-30"
-url: "https://github.com/InmaIG/ianezi"
+url: "https://github.com/InmaIG/m3DinAI"
 preferred-citation:
   type: article
   title: "Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids"
