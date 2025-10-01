@@ -47,6 +47,62 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
+---
+
+## Demo (synthetic data)
+
+A minimal, self-contained demo notebook is provided in **`notebooks/m3DinAI_demo.ipynb`**.  
+It does **not** require real images: it generates a small synthetic feature table, runs a 2D UMAP, and performs a simple Welch’s t-test vs DMSO.
+
+### How to run
+```bash
+# Create and activate the environment (if you haven't)
+python -m venv .venv
+# Linux/Mac:
+source .venv/bin/activate
+# Windows:
+# .venv\Scripts\activate
+
+pip install -r requirements.txt
+
+# Launch Jupyter and open the demo
+python -m pip install jupyter
+jupyter notebook notebooks/m3DinAI_demo.ipynb
+
+What the demo does
+
+Creates a toy table results/demo/demo_spheroid_features_trat.xlsx with features and Treatment labels.
+
+Standardizes features and computes a UMAP embedding.
+
+Plots a scatter colored by treatment.
+
+Runs a Welch’s t-test (unequal variances) vs DMSO on a toy feature and saves:
+
+results/demo/welch_summary_demo.csv
+
+Expected outputs
+
+A UMAP figure displayed in the notebook.
+
+Files written under results/demo/.
+
+For real experiments, run the scripts under src/ on your imaging data and adjust paths (e.g., root_dir, excel_folder, results_folder) as described below.
+
+
+---
+
+### (Opcional) Mini sección de “Troubleshooting” para la demo
+
+También puedes añadir esto al final de la sección de demo:
+
+```markdown
+### Troubleshooting
+
+- **`ModuleNotFoundError`**: ensure the virtual environment is active and `pip install -r requirements.txt` completed without errors.
+- **`umap-learn` issues on some systems**: try `pip install umap-learn==0.5.3`.
+- **Notebook doesn’t appear**: install Jupyter with `python -m pip install jupyter` and relaunch.
+- **No outputs in `results/demo/`**: verify you have write permissions in the repository folder.
 
 ---
 
