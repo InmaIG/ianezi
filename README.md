@@ -12,7 +12,7 @@ The pipeline implements brightfield HCI preprocessing, segmentation, feature ext
 ## Repository structure
 
 ```
-ianezi/
+m3DinAI/
 ├── src/
 │   ├── 1_feature_extraction.py
 │   ├── 2_copy_excels.py
