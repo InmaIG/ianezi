@@ -8,10 +8,22 @@ version: "v1.0.1"
 doi: "10.5281/zenodo.17335305"
 date-released: "2025-09-30"
 url: "https://github.com/InmaIG/m3DinAI"
+
 preferred-citation:
-  type: article
-  title: "Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids"
+  type: software
+  title: "m3DinAI: Morphometric profiling pipeline for 3D TNBC spheroids"
   authors:
     - family-names: "Iáñez García"
       given-names: "Inmaculada"
-  year: 2025
+  version: "v1.0.1"
+  doi: "10.5281/zenodo.17335305"
+  url: "https://github.com/InmaIG/m3DinAI"
+  date-released: "2025-09-30"
+
+references:
+  - type: article
+    title: "Label-free morphological profiling of chemotherapy response in 3D breast cancer spheroids"
+    authors:
+      - family-names: "Iáñez García"
+        given-names: "Inmaculada"
+    year: 2025
