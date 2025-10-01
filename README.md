@@ -128,7 +128,7 @@ If you use this software, please cite both the paper and the archived code relea
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335305.svg)](https://doi.org/10.5281/zenodo.17335305)
 
 ```
-@software{ianezi_zenodo_2025,
+@software{m3dinai_zenodo_2025,
   title        = {m3DinAI: Morphometric profiling pipeline for 3D TNBC spheroids},
   author       = {Iáñez García, Inmaculada},
   year         = {2025},
