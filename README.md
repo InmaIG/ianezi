@@ -167,22 +167,22 @@ Raw images are **not** included in this repository. The scripts expect a directo
 
 If you use this software, please cite both the paper and the archived code release:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335305.svg)](https://doi.org/10.5281/zenodo.17335305)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.NEW_DOI.svg)](https://doi.org/10.5281/zenodo.NEW_DOI)
 
 ```
 @software{m3dinai_zenodo_2025,
-  title        = {m3DinAI: Morphometric profiling pipeline for 3D TNBC spheroids},
-  author       = {Iáñez García, Inmaculada},
-  year         = {2025},
-  publisher    = {Zenodo},
-  version      = {v1.0.1},
-  doi          = {10.5281/zenodo.17335305},
-  url          = {https://github.com/InmaIG/m3DinAI}
+title = {m3DinAI: Morphometric profiling pipeline for 3D TNBC spheroids},
+author = {Iáñez García, Inmaculada},
+year = {2025},
+publisher = {Zenodo},
+version = {v1.0.2},
+doi = {10.5281/zenodo.NEW_DOI},
+url = {https://github.com/InmaIG/m3DinAI}
 }
 ```
 
-Archived at Zenodo: https://doi.org/10.5281/zenodo.17335305  
-Latest version: https://doi.org/10.5281/zenodo.17325450  
+Archived at Zenodo: https://doi.org/10.5281/zenodo.NEW_DOI  
+Latest version: https://doi.org/10.5281/zenodo.17325450
 
 ---
 
