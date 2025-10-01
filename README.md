@@ -135,7 +135,7 @@ If you use this software, please cite both the paper and the archived code relea
   publisher    = {Zenodo},
   version      = {v1.0.1},
   doi          = {10.5281/zenodo.17335305},
-  url          = {https://github.com/InmaIG/ianezi}
+  url          = {https://github.com/InmaIG/m3DinAI}
 }
 ```
 
