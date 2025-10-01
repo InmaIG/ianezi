@@ -35,8 +35,8 @@ m3DinAI/
 ## Installation
 
 ```bash
-git clone https://github.com/InmaIG/ianezi.git
-cd ianezi
+git clone https://github.com/InmaIG/m3DinAI.git
+cd m3DinAI
 
 # (optional but recommended)
 python -m venv .venv
