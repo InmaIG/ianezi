@@ -5,8 +5,8 @@ authors:
   - family-names: "Iáñez García"
     given-names: "Inmaculada"
 version: "v1.0.2"
-doi: "10.5281/zenodo.NEW_DOI"
-date-released: "2025-10-01"   # pon la fecha de hoy
+doi: "10.5281/zenodo.17242729"
+date-released: "2025-10-01"
 url: "https://github.com/InmaIG/m3DinAI"
 
 preferred-citation:
@@ -16,7 +16,7 @@ preferred-citation:
     - family-names: "Iáñez García"
       given-names: "Inmaculada"
   version: "v1.0.2"
-  doi: "10.5281/zenodo.NEW_DOI"
+  doi: "10.5281/zenodo.17242729"
   url: "https://github.com/InmaIG/m3DinAI"
   date-released: "2025-10-01"
 
