@@ -167,7 +167,7 @@ Raw images are **not** included in this repository. The scripts expect a directo
 
 If you use this software, please cite both the paper and the archived code release:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.NEW_DOI.svg)](https://doi.org/10.5281/zenodo.NEW_DOI)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17242729.svg)](https://doi.org/10.5281/zenodo.17242729)
 
 ```
 @software{m3dinai_zenodo_2025,
@@ -176,12 +176,12 @@ author = {Iáñez García, Inmaculada},
 year = {2025},
 publisher = {Zenodo},
 version = {v1.0.2},
-doi = {10.5281/zenodo.NEW_DOI},
+doi = {10.5281/zenodo.17242729},
 url = {https://github.com/InmaIG/m3DinAI}
 }
 ```
 
-Archived at Zenodo: https://doi.org/10.5281/zenodo.NEW_DOI  
+Archived at Zenodo: https://doi.org/10.5281/zenodo.17242729  
 Latest version: https://doi.org/10.5281/zenodo.17325450
 
 ---
